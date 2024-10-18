@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dsypenx17yokr"]
+[gd_scene load_steps=19 format=3 uid="uid://dsypenx17yokr"]
 
 [ext_resource type="Script" path="res://World/world.gd" id="1_t6sw7"]
 [ext_resource type="Texture2D" uid="uid://doqnnkxnewc7s" path="res://World/Tilesets/grass.png" id="1_xhjms"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://b4xgrlys4tkow" path="res://World/Tilesets/objects.png" id="4_w1f4d"]
 [ext_resource type="PackedScene" uid="uid://uoc0oe7oi37n" path="res://Collectables/life_pot.tscn" id="6_c3tfv"]
 [ext_resource type="PackedScene" uid="uid://e3ise0434c3" path="res://GUI/hearts_container.tscn" id="7_exaug"]
+[ext_resource type="Resource" uid="uid://c3dbhkh0yqhdk" path="res://Inventory/PlayerInventory.tres" id="8_0hel3"]
 [ext_resource type="Script" path="res://World/CanvasLayer.gd" id="8_ns5f0"]
 [ext_resource type="PackedScene" uid="uid://oq5ytwsifi80" path="res://GUI/inventory_gui.tscn" id="9_rcc4a"]
 
@@ -236,6 +237,7 @@ layer_3/tile_data = PackedInt32Array(458766, 4, 65536, 655378, 4, 65536, 786441,
 
 [node name="Player" parent="TileMap" instance=ExtResource("2_ry5re")]
 position = Vector2(204, 97)
+inventory = ExtResource("8_0hel3")
 
 [node name="Slime" parent="TileMap" node_paths=PackedStringArray("endPoint") instance=ExtResource("4_1rpt1")]
 position = Vector2(440, 144)
